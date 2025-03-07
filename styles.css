@@ -1,0 +1,90 @@
+@keyframes slowFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Centering everything */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height */
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: #292929;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #3FFF05;
+  text-shadow: 0 0 10px #3FFF05;
+  animation: slowFloat 5s infinite ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  animation: slowFloat 6s infinite ease-in-out;
+}
+
+.creator {
+  font-size: 16px;
+  color: #3FFF05;
+  text-shadow: 0 0 8px #3FFF05;
+  font-weight: bold;
+}
+
+.feature {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.feature::before {
+  content: "• ";
+  color: #3FFF05;
+  text-shadow: 0 0 8px #3FFF05;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #3FFF05;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  animation: slowFloat 4s infinite ease-in-out;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #33CC04;
+  box-shadow: 0 0 15px #3FFF05;
+  transform: scale(1.05);
+}
+
+#counter {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #3FFF05;
+  text-shadow: 0 0 8px #3FFF05;
+  animation: slowFloat 7s infinite ease-in-out;
+}

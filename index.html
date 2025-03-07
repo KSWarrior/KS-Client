@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KS Client By KS Gamer</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>KS Client</h1>
+    <p class="creator">Created By KS Gamer</p>
+    <p class="feature">Optimise your Minecraft</p>
+    <p class="feature">Remove lagg</p>
+    <p class="feature">Quick setting</p>
+    <p class="feature">New UI</p>
+    <p class="feature">Beautiful and bright Texture</p>
+    <p class="feature">Clear water</p>
+    <p class="feature">Low fire</p>
+    <p class="feature">Smooth game play</p>
+    
+    <!-- Download button -->
+    <a href="https://sites.google.com/view/minecraft-pe-client/version" target="_blank" class="download-btn">Download KS Client</a>
+    
+    <p id="counter">Downloads: <span id="downloadCount">0</span></p>
+  </div>
+
+  <script>
+    // Retrieve the current download count from localStorage, or initialize to 0
+    let count = localStorage.getItem('downloadCount') || 0;
+    document.getElementById("downloadCount").textContent = count;
+
+    document.querySelector(".download-btn").addEventListener("click", function() {
+      // Increase the counter and update localStorage
+      count++;
+      localStorage.setItem('downloadCount', count);
+      document.getElementById("downloadCount").textContent = count;
+    });
+  </script>
+</body>
+</html>
