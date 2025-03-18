@@ -19,12 +19,7 @@ body {
 }
 
 .container {
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  background: #292929;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 h1 {
@@ -34,7 +29,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 12px;
   animation: slowFloat 6s infinite ease-in-out;
 }
 
@@ -46,17 +41,9 @@ p {
 }
 
 .feature {
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-}
-
-.feature::before {
-  content: "• ";
-  color: #3FFF05;
-  text-shadow: 0 0 8px #3FFF05;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
+  color: lightgray;
+  text-align: left;
 }
 
 .download-btn {
